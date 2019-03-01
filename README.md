@@ -2,9 +2,9 @@
 
 ## To Do
 
-- [ ] Headers
-- [ ] SiteMap
-- [ ] Favicon
-- [ ] body, menus
-- [ ] `robot.txt`
+- [x] Headers
+- [x] SiteMap
+- [x] Favicon
+- [x] body, menus
+- [x] `robots.txt`
 - [ ] Redirect to `stresscompany.net`
