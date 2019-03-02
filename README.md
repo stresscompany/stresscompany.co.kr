@@ -1,10 +1,8 @@
 # stresscompany.co.kr
 
-## To Do
+## Install project
 
-- [x] Headers
-- [x] SiteMap
-- [x] Favicon
-- [x] body, menus
-- [x] `robots.txt`
-- [ ] Redirect to `stresscompany.net`
+```bash
+$ git clone https://github.com/stresscompany/stresscompany.github.io
+$ nvm use && yarn install
+```
