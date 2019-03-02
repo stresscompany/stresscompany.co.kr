@@ -1,10 +1,10 @@
-;window.channelPluginSettings = {
+window.channelPluginSettings = {
   "pluginKey": "0c26aa2e-8133-4eb9-8ef5-de7f7a32571f"
 };
 (function() {
   var w = window;
   if (w.ChannelIO) {
-    return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    return (window.console.warn || window.console.log || function(){})('channel.io scripts are aleardy included.');
   }
   var d = window.document;
   var ch = function() {
