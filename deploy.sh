@@ -5,6 +5,7 @@ yarn build
 touch out/.nojekyll
 touch out/CNAME && echo "stresscompany.co.kr" >> out/CNAME
 cp sitemap.xml out/sitemap.xml
+cp robots.txt out/robots.txt
 
 ( cd out
  git init
