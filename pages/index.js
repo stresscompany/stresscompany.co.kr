@@ -19,6 +19,12 @@ export default class Index extends React.Component {
       <div>
         <Meta />
         <Home stars={stars} />
+        <footer>
+          <a href="https://smartstore.naver.com/stress">Shopping</a>&nbsp;
+          <a href="https://brunch.co.kr/@stresscompany#info">브런치</a>&nbsp;
+          <a href="https://www.facebook.com/stresscompany/">Facebook</a>&nbsp;
+          <a href="https://www.instagram.com/stresscompany/">Instagram</a>
+        </footer>
       </div>
     )
   }
