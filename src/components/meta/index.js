@@ -19,6 +19,7 @@ export default () => (
       <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon.svg" />
       <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon.svg" />
       <title>스트레스컴퍼니</title>
+      <script charset="UTF-8" src="/static/js/channel.js" async></script>
     </Head>
     <style jsx global>{`
       body { 
