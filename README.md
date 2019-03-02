@@ -3,6 +3,6 @@
 ## Install project
 
 ```bash
-$ git clone https://github.com/stresscompany/stresscompany.github.io
+$ git clone https://github.com/stresscompany/stresscompany.co.kr
 $ nvm use && yarn install
 ```
