@@ -23,9 +23,9 @@ export default () => (
     </Head>
     <style jsx global>{`
       body { 
-        background: #000;
-        font: 11px menlo;
-        color: #fff;
+        background: #fff;
+        font: 16px menlo;
+        color: #000;
       }
     `}</style>
   </div>
