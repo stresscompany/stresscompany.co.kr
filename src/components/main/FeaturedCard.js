@@ -29,11 +29,11 @@ const Content = styled.div`
 const Title = styled.span`
   font-weight: 900;
   color: white;
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
   line-height: 1.25;
-  margin-bottom: 10px;
-  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 `
 
 const Divider = styled.div`
@@ -43,27 +43,25 @@ const Divider = styled.div`
   border-radius: 2px;
 `
 
-const CTA = styled.div`
+const Button = styled.a`
   background-color: ${props => props.bgColor};
   padding: 10px 0px;
+  text-decoration: none;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 7px;
   width: 100%;
-  cursor: pointer;
-`
-
-const CTAText = styled.span`
-  a {
+  span {
     color: white;
-    text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
   }
 `
 
 const Card = ({
-  bgPhoto,
   title,
-  cta,
+  desc,
+  href,
+  bgPhoto,
   ctaBg = "#006EFE",
   ctaColor = "white",
   iconName,
@@ -79,21 +77,18 @@ const Card = ({
           className={`${iconName} fa-${iconSize}x`}
         />
       )}
-      {title && <Title>{title}</Title>}
-      {title && <Divider bgColor={dividerColor} />}
+      <Title>{title}</Title>
+      <Divider bgColor={dividerColor} />
     </Content>
-    {cta && (
-      <CTA bgColor={ctaBg} color={ctaColor}>
-        <CTAText><a href="https://stresscompany.net/about">{cta}</a></CTAText>
-      </CTA>
-    )}
+    <Button href={href} bgColor={ctaBg} color={ctaColor}><span>{desc}</span></Button>
   </Container>
 )
 
 Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
   bgPhoto: PropTypes.string,
-  title: PropTypes.string,
-  cta: PropTypes.string,
   ctaBg: PropTypes.string,
   ctaColor: PropTypes.string,
   iconName: PropTypes.string,
