@@ -18,7 +18,7 @@ export default () => (
       <meta name="naver-site-verification" content="99d3cfd3eb0e9eb57c13a1ec5aa09cb6284f751a"/>
       <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon.svg" />
       <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon.svg" />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" />
       <title>스트레스컴퍼니</title>
       <script charSet="UTF-8" src="/static/js/channel.js" defer></script>

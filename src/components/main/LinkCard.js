@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const Container = styled.div`
+const Container = styled.a`
   border-radius: 8px;
   display: flex;
   padding: 25px;
@@ -11,12 +11,14 @@ const Container = styled.div`
   background-image: ${props =>
     `linear-gradient(45deg, ${props.fromColor}, ${props.toColor})`};
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.07);
+  text-decoration: none;
 `
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 `
 
 const IconContainer = styled.div`
@@ -30,6 +32,7 @@ const Title = styled.span`
 `
 
 const LinkCard = ({
+  href,
   fromColor = "#494AFF",
   toColor = "#006EFE",
   iconName,
@@ -38,7 +41,7 @@ const LinkCard = ({
   titleColor = "white",
   title
 }) => (
-  <Container fromColor={fromColor} toColor={toColor}>
+  <Container fromColor={fromColor} toColor={toColor} href={href}>
     <Content>
       <IconContainer>
         <i
@@ -52,6 +55,7 @@ const LinkCard = ({
 )
 
 LinkCard.propTypes = {
+  href: PropTypes.string.isRequired,
   fromColor: PropTypes.string,
   toColor: PropTypes.string,
   iconName: PropTypes.string,
